@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc1acd8f9045e814c895c11524dacd89, type: 3}
+  m_Name: Upgrade_MiningRadius
+  m_EditorClassIdentifier: MountainEater.Runtime::MountainEater.Upgrades.UpgradeDefinition
+  type: 1
+  displayName: Mining Radius
+  valueLabel: "Yar\u0131\xE7ap"
+  description: "Tek t\u0131klamada etkilenen 3D k\xFCrenin voxel yar\u0131\xE7ap\u0131
+    (0 \u2192 1, 1 \u2192 7, 2 \u2192 33, 3 \u2192 123 voxel)."
+  levels:
+  - value: 0
+    cost: 0
+  - value: 1
+    cost: 600
+  - value: 2
+    cost: 9000
+  - value: 3
+    cost: 150000
+  extendBeyondTable: 0
+  valueGrowth: 1
+  costGrowth: 1
+  maxLevel: 0
+  integerValues: 1

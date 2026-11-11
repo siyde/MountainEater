@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc1acd8f9045e814c895c11524dacd89, type: 3}
+  m_Name: Upgrade_PickaxeDamage
+  m_EditorClassIdentifier: MountainEater.Runtime::MountainEater.Upgrades.UpgradeDefinition
+  type: 0
+  displayName: Pickaxe Damage
+  valueLabel: Hasar
+  description: "Her t\u0131klamada etkilenen voxellere verilen hasar."
+  levels:
+  - value: 1
+    cost: 0
+  - value: 2
+    cost: 20
+  - value: 3
+    cost: 65
+  - value: 5
+    cost: 220
+  - value: 8
+    cost: 850
+  - value: 13
+    cost: 3200
+  extendBeyondTable: 1
+  valueGrowth: 1.6
+  costGrowth: 3.8
+  maxLevel: 25
+  integerValues: 1

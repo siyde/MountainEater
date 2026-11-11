@@ -1,0 +1,250 @@
+/* Mountain Eater - ana HUD. Dağ ana görsel kalsın: paneller köşelerde, yarı saydam. */
+
+.hud-root {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.panel {
+    background-color: rgba(18, 22, 28, 0.82);
+    border-radius: 10px;
+    border-width: 1px;
+    border-color: rgba(255, 255, 255, 0.08);
+    padding: 12px 14px;
+}
+
+.progress-panel {
+    position: absolute;
+    left: 16px;
+    top: 16px;
+    width: 330px;
+}
+
+.side-panel {
+    position: absolute;
+    right: 16px;
+    top: 16px;
+    width: 310px;
+}
+
+.hidden {
+    display: none;
+}
+
+.side-scroll {
+    max-height: 640px;
+}
+
+.placement-banner {
+    position: absolute;
+    top: 16px;
+    left: 50%;
+    width: 440px;
+    translate: -50% 0;
+    align-items: center;
+    border-color: rgb(110, 200, 120);
+}
+
+.placement-banner .upgrade-detail {
+    white-space: normal;
+    -unity-text-align: middle-center;
+}
+
+.problem {
+    color: rgb(255, 140, 90);
+}
+
+.button-row {
+    flex-direction: row;
+}
+
+.button-row > .upgrade-button {
+    flex-grow: 1;
+    flex-basis: 0;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+.status-working {
+    color: rgb(110, 220, 125);
+}
+
+.status-stopped {
+    color: rgb(255, 120, 90);
+}
+
+.upgrade-detail.wrap {
+    white-space: normal;
+}
+
+.hint {
+    font-size: 12px;
+    color: rgb(150, 160, 175);
+    white-space: normal;
+    margin-bottom: 2px;
+}
+
+.region-row {
+    margin-top: 10px;
+    padding: 8px 10px;
+    border-radius: 8px;
+    border-width: 2px;
+    border-color: rgba(0, 0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.region-row:hover {
+    background-color: rgba(255, 255, 255, 0.09);
+}
+
+.region-row.selected {
+    border-color: rgb(255, 255, 255);
+}
+
+.region-status-unlocked {
+    color: rgb(110, 220, 125);
+}
+
+.region-status-locked {
+    color: rgb(255, 165, 70);
+}
+
+.bottom-bar {
+    position: absolute;
+    bottom: 16px;
+    left: 0;
+    right: 0;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.bar-button {
+    height: 40px;
+    min-width: 150px;
+    margin: 0 6px;
+    border-width: 1px;
+    border-color: rgba(255, 255, 255, 0.10);
+    border-radius: 8px;
+    font-size: 15px;
+    -unity-font-style: bold;
+    color: rgb(235, 238, 242);
+    background-color: rgba(18, 22, 28, 0.86);
+}
+
+.bar-button:hover {
+    background-color: rgba(40, 48, 58, 0.92);
+}
+
+.bar-button.active {
+    border-color: rgb(110, 200, 120);
+    background-color: rgba(40, 90, 50, 0.92);
+}
+
+.floating-text.locked {
+    color: rgb(255, 140, 90);
+    font-size: 16px;
+}
+
+.money {
+    font-size: 30px;
+    color: rgb(255, 214, 90);
+    -unity-font-style: bold;
+    margin-bottom: 8px;
+}
+
+.caption {
+    font-size: 12px;
+    color: rgb(160, 170, 185);
+    -unity-font-style: bold;
+    letter-spacing: 1px;
+    margin-bottom: 4px;
+}
+
+.blocks {
+    font-size: 16px;
+    color: rgb(240, 242, 245);
+}
+
+.percent {
+    font-size: 13px;
+    color: rgb(190, 200, 210);
+    margin-top: 4px;
+}
+
+.progress-track {
+    height: 10px;
+    margin-top: 6px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.12);
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    width: 0%;
+    border-radius: 5px;
+    background-color: rgb(110, 200, 120);
+}
+
+.upgrade-row {
+    margin-top: 10px;
+    padding: 8px 10px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.upgrade-title {
+    font-size: 15px;
+    color: rgb(245, 245, 245);
+    -unity-font-style: bold;
+}
+
+.upgrade-detail {
+    font-size: 13px;
+    color: rgb(190, 200, 210);
+    margin-top: 2px;
+}
+
+.upgrade-button {
+    height: 30px;
+    margin: 6px 0 0 0;
+    border-width: 0;
+    border-radius: 6px;
+    font-size: 14px;
+    -unity-font-style: bold;
+    color: rgb(255, 255, 255);
+    background-color: rgb(58, 140, 74);
+}
+
+.upgrade-button:hover {
+    background-color: rgb(72, 165, 90);
+}
+
+.upgrade-button:active {
+    background-color: rgb(48, 120, 62);
+}
+
+.upgrade-button:disabled {
+    color: rgb(150, 150, 150);
+    background-color: rgb(68, 72, 78);
+}
+
+.floating-layer {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.floating-text {
+    position: absolute;
+    font-size: 18px;
+    color: rgb(255, 220, 90);
+    -unity-font-style: bold;
+    -unity-text-outline-width: 1px;
+    -unity-text-outline-color: rgba(0, 0, 0, 0.85);
+}

@@ -1,0 +1,54 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" editor-extension-mode="False">
+    <ui:Style src="MainHud.uss" />
+    <ui:VisualElement name="hud-root" class="hud-root" picking-mode="Ignore">
+
+        <ui:VisualElement name="progress-panel" class="panel progress-panel">
+            <ui:Label name="money-label" class="money" text="0 $" />
+            <ui:Label class="caption" text="MOUNTAIN PROGRESS" />
+            <ui:Label name="blocks-label" class="blocks" text="-" />
+            <ui:VisualElement class="progress-track">
+                <ui:VisualElement name="progress-fill" class="progress-fill" />
+            </ui:VisualElement>
+            <ui:Label name="percent-label" class="percent" text="-" />
+        </ui:VisualElement>
+
+        <ui:VisualElement name="upgrade-panel" class="panel side-panel">
+            <ui:Label class="caption" text="YÜKSELTMELER" />
+            <ui:ScrollView name="upgrade-scroll" class="side-scroll">
+                <ui:VisualElement name="upgrade-list" />
+            </ui:ScrollView>
+        </ui:VisualElement>
+
+        <ui:VisualElement name="region-panel" class="panel side-panel hidden">
+            <ui:Label class="caption" text="BÖLGELER" />
+            <ui:Label class="hint" text="Dağa tıklayarak bölge seç · R / Esc: kapat" />
+            <ui:VisualElement name="region-list" />
+        </ui:VisualElement>
+
+        <ui:VisualElement name="shop-panel" class="panel side-panel hidden">
+            <ui:Label class="caption" text="MAĞAZA" />
+            <ui:VisualElement name="shop-list" />
+        </ui:VisualElement>
+
+        <ui:VisualElement name="machines-panel" class="panel side-panel hidden">
+            <ui:Label class="caption" text="MAKİNELER" />
+            <ui:Label name="machines-empty" class="hint" text="Henüz makine yok. Mağazadan Mini Drill satın al." />
+            <ui:ScrollView name="machines-scroll" class="side-scroll">
+                <ui:VisualElement name="machine-list" />
+            </ui:ScrollView>
+        </ui:VisualElement>
+
+        <ui:VisualElement name="placement-banner" class="panel placement-banner hidden">
+            <ui:Label name="placement-title" class="upgrade-title" text="Yerleştirme" />
+            <ui:Label name="placement-detail" class="upgrade-detail" text="" />
+        </ui:VisualElement>
+
+        <ui:VisualElement name="bottom-bar" class="bottom-bar">
+            <ui:Button name="shop-button" class="bar-button" text="Shop" />
+            <ui:Button name="machines-button" class="bar-button" text="Machines" />
+            <ui:Button name="regions-button" class="bar-button" text="Regions (R)" />
+        </ui:VisualElement>
+
+        <ui:VisualElement name="floating-layer" class="floating-layer" picking-mode="Ignore" />
+    </ui:VisualElement>
+</ui:UXML>
